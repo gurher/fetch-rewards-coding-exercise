@@ -121,7 +121,7 @@ LIMIT 1
 ## Third: Evaluate Data Quality Issues in the Data Provided
 Using the programming language of your choice (SQL, Python, R, Bash, etc...) identify at least one data quality issue. We are not expecting a full blown review of all the data provided, but instead want to know how you explore and evaluate data of questionable provenance.
 
-
+Full Analysis - [Final_Reports.ipynb](https://github.com/gurher/fetch_rewards_coding_exercise/blob/master/coding_challenge.ipynb)
 
 ## Fourth: Communicate with Stakeholders
 Hi,
