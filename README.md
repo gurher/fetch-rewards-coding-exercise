@@ -119,9 +119,9 @@ LIMIT 1
 ```
 
 ## Third: Evaluate Data Quality Issues in the Data Provided
-Using the programming language of your choice (SQL, Python, R, Bash, etc...) identify at least one data quality issue. We are not expecting a full blown review of all the data provided, but instead want to know how you explore and evaluate data of questionable provenance.
+One crucial data quality issue I discovered is that a large number of test brands and null values exist in the brands table. This made it difficult to find the names of the brands purchased in the receipts table in order to match the names of brands. As we can see from the above results, only 728 brands were left when test brands were excluded from the brands' table. Furthermore, the itemlist table which was acquired from the receipts table did not contain a uuid of items, which made it hard to find the brand of the items. In order to solve this issue, I used barcodes of those 728 brands to see the types of brands purchased by users in the receipts. When brandcodes were compared, it was slightly better with 41 matching brands but it still shows poor matching rate between receipts and brands data. However, I could only match 16 of them in the receipts table. Eventually, I had to use a description of the items to find the brand.
 
-Full Analysis - [Final_Reports.ipynb](https://github.com/gurher/fetch_rewards_coding_exercise/blob/master/coding_challenge.ipynb)
+Full Analysis - [codes](https://github.com/gurher/fetch_rewards_coding_exercise/blob/master/coding_challenge.ipynb)
 
 ## Fourth: Communicate with Stakeholders
 Hi,
